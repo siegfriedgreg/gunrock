@@ -1,3 +1,20 @@
+1) clone the repository from the github account.
+2) in gunrock folder, "mkdir build && cd build/"
+3) Load all modules: 
+   cuda/8.0 , gcc/5.3.0 , metis/5.1.0_gnu , mpi/gcc_openmpi , python2/2.7.11_gcc , boost/1.60.0_gnu_openmpi , cmake/3.7.2
+4) "module show XXX", where XXX is boost and metis, and ave the file locations to modify the CMakeCache.txt file.
+5) find the boost and metis lines for their needed folder locations and append.
+6) append the sample program from ON to OFF; listed after the algorithms...
+7) "cmake .."
+8) "make"
+9) that should allow gunrock to compile on bridges.
+
+##################################################################################################################################################################################################################################################
+#########################################################################################################################
+#########################################################################################################################
+#########################################################################################################################
+#########################################################################################################################
+#########################################################################################################################
 <p align="center">
   <a href="https://github.com/gunrock/gunrock/"><img src="https://github.com/gunrock/docs/raw/master/source/images/GunrockLogo150px.png"></a>
   <br>
