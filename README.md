@@ -2,10 +2,10 @@
 2) in gunrock folder, "mkdir build && cd build/"
 3) Load all modules: 
    cuda/8.0 , gcc/5.3.0 , metis/5.1.0_gnu , mpi/gcc_openmpi , python2/2.7.11_gcc , boost/1.60.0_gnu_openmpi , cmake/3.7.2
-4) "module show XXX", where XXX is boost and metis, and ave the file locations to modify the CMakeCache.txt file.
-5) find the boost and metis lines for their needed folder locations and append.
-6) append the sample program from ON to OFF; listed after the algorithms...
-7) "cmake .."
+4) "module show XXX", where XXX is boost and metis, and save the file locations in order to modify the CMakeCache.txt file.
+5) find the boost and metis lines for their needed folder locations and append. boost needs the "include" folder and metis needs the "libmetis.so" filename.
+6) if needing to only do one at a time you will need to append the CMakeCache.txt to turn on and off a few items, gunrock document will explain further.
+7) "cmake .." (no errors or warnings present)
 8) "make"
 9) that should allow gunrock to compile on bridges.
 
