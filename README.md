@@ -7,7 +7,7 @@
 6) if needing to only do one at a time you will need to append the CMakeCache.txt to turn on and off a few items, gunrock document will explain further.
 7) "cmake .." (no errors or warnings present)
 8) "make"  (no errors but many consistent warnings dealing with the boost library)
-9) that should allow gunrock to compile on bridges.
+9) that should allow gunrock to compile on bridges. targets are located in the "build/bin/" folder.
 
 ##################################################################################################################################################################################################################################################
 #########################################################################################################################
