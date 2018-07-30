@@ -164,7 +164,7 @@ else()
   # The user has not requested an exact version.  Among known
   # versions, find those that are acceptable to the user request.
   set(_Boost_KNOWN_VERSIONS ${Boost_ADDITIONAL_VERSIONS}
-    "1.56.0" "1.56" "1.55.0" "1.55" "1.54.0" "1.54"
+    "1.60.0" "1.56.0" "1.56" "1.55.0" "1.55" "1.54.0" "1.54"
     "1.53.0" "1.53" "1.52.0" "1.52" "1.51.0" "1.51"
     "1.50.0" "1.50" "1.49.0" "1.49" "1.48.0" "1.48" "1.47.0" "1.47" "1.46.1"
     "1.46.0" "1.46" "1.45.0" "1.45" "1.44.0" "1.44" "1.43.0" "1.43" "1.42.0" "1.42"
@@ -256,6 +256,7 @@ if(NOT Boost_INCLUDE_DIR)
     list(APPEND _boost_INCLUDE_SEARCH_DIRS NO_CMAKE_SYSTEM_PATH)
   else()
     list(APPEND _boost_INCLUDE_SEARCH_DIRS PATHS
+      /opt/packages/boost/1.60.0/include
       C:/boost/include
       C:/boost
       /sw/local/include
