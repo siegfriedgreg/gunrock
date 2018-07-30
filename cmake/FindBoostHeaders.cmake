@@ -245,7 +245,7 @@ if(_Boost_CHANGE_INCDIR AND NOT _Boost_INCLUDE_DIR_CHANGED)
   unset(Boost_INCLUDE_DIR CACHE)
 endif()
 
-set(Boost_INCLUDE_DIR "opt/packages/boost/1.60.0/include")
+set(Boost_INCLUDE_DIR "/opt/packages/boost/1.60.0/include")
 
 if(NOT Boost_INCLUDE_DIR)
   set(_boost_INCLUDE_SEARCH_DIRS "")
