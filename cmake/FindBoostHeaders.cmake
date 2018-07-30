@@ -285,6 +285,7 @@ if(NOT Boost_INCLUDE_DIR)
     list(APPEND _boost_PATH_SUFFIXES
       "boost-${_boost_BOOSTIFIED_VERSION}"
       "boost_${_boost_BOOSTIFIED_VERSION}"
+      "boost/${_boost_BOOSTIFIED_VERSION}"
       "boost/boost-${_boost_BOOSTIFIED_VERSION}"
       "boost/boost_${_boost_BOOSTIFIED_VERSION}"
       )
