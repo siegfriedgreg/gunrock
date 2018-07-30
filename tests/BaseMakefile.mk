@@ -44,7 +44,7 @@ SM_TARGETS = $(GEN_SM70) $(GEN_SM35) $(GEN_SM61) #$(GEN_SM61)
 CUDA_INC = "$(shell dirname $(NVCC))/../include"
 MGPU_INC = "../../externals/moderngpu/include"
 CUB_INC = "../../externals/cub"
-BOOST_DEPS = -I../../.. -Xlinker -lboost_system -Xlinker -lboost_chrono -Xlinker -lboost_timer -Xlinker -lboost_filesystem
+BOOST_DEPS = -I "/opt/packages/boost/1.60.0/include" -Xlinker -lboost_system -Xlinker -lboost_chrono -Xlinker -lboost_timer -Xlinker -lboost_filesystem
 OMP_DEPS = -Xcompiler -fopenmp -Xlinker -lgomp
 
 ifneq ($(use_metis), 1)
@@ -53,7 +53,7 @@ else
 	METIS_DEPS = -Xlinker -lmetis -Xcompiler -DMETIS_FOUND
 endif
 GUNROCK_DEF = -Xcompiler -DGUNROCKVERSION=0.4.0
-INC = -I$(CUDA_INC) -I$(MGPU_INC) -I$(CUB_INC) $(BOOST_DEPS) $(OMP_DEPS) $(METIS_DEPS) $(GUNROCK_DEF) -I.. -I../..
+INC = -I $(CUDA_INC) -I$(MGPU_INC) -I$(CUB_INC) $(BOOST_DEPS) $(OMP_DEPS) $(METIS_DEPS) $(GUNROCK_DEF) -I.. -I../..
 
 #-------------------------------------------------------------------------------
 # Defines
