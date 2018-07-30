@@ -104,11 +104,7 @@
 #
 #
 #
-##########################################################################
-####################################################################
-############################################################
 
-set( ENV{BOOST_INCLUDE_DIR} /opt/packages/boost/1.60.0/include )
 
 #-------------------------------------------------------------------------------
 #  FindBoost functions & macros
@@ -248,6 +244,8 @@ _Boost_CHANGE_DETECT(_Boost_CHANGE_INCDIR ${_Boost_VARS_DIR} ${_Boost_VARS_INC})
 if(_Boost_CHANGE_INCDIR AND NOT _Boost_INCLUDE_DIR_CHANGED)
   unset(Boost_INCLUDE_DIR CACHE)
 endif()
+
+set( ENV{BOOST_INCLUDE_DIR} /opt/packages/boost/1.60.0/include )
 
 if(NOT Boost_INCLUDE_DIR)
   set(_boost_INCLUDE_SEARCH_DIRS "")
