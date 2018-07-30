@@ -256,10 +256,10 @@ if(NOT Boost_INCLUDE_DIR)
     list(APPEND _boost_INCLUDE_SEARCH_DIRS NO_CMAKE_SYSTEM_PATH)
   else()
     list(APPEND _boost_INCLUDE_SEARCH_DIRS PATHS
+      /opt/packages/boost/1.60.0/include/boost
       /opt/packages/boost/1.60.0/include
-      C:/boost/include
-      C:/boost
-      /sw/local/include
+      /opt/packages/boost/
+      /opt/packages/
       )
   endif()
 
