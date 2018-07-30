@@ -236,8 +236,6 @@ endif()
 #  Search for Boost include DIR
 # ------------------------------------------------------------------------
 
-BOOST_INCLUDEDIR(/opt/packages/boost/1.60.0/include)
-
 set(_Boost_VARS_INC BOOST_INCLUDEDIR Boost_INCLUDE_DIR Boost_ADDITIONAL_VERSIONS)
 _Boost_CHANGE_DETECT(_Boost_CHANGE_INCDIR ${_Boost_VARS_DIR} ${_Boost_VARS_INC})
 # Clear Boost_INCLUDE_DIR if it did not change but other input affecting the
@@ -258,10 +256,7 @@ if(NOT Boost_INCLUDE_DIR)
     list(APPEND _boost_INCLUDE_SEARCH_DIRS NO_CMAKE_SYSTEM_PATH)
   else()
     list(APPEND _boost_INCLUDE_SEARCH_DIRS PATHS
-      /opt/packages/boost/1.60.0/include/boost
       /opt/packages/boost/1.60.0/include
-      /opt/packages/boost/
-      /opt/packages/
       )
   endif()
 
