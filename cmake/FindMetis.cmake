@@ -31,6 +31,7 @@ ENDIF(PARMETIS_INCLUDE_DIR)
 #  Gunrock: Find Metis and set pre-compiler flag
 # ------------------------------------------------------------------------
 FIND_LIBRARY(METIS_LIBRARY metis
+  /opt/packages/metis/gnu/5.1.0/lib
   /usr/local/lib
   /usr/lib
   )
