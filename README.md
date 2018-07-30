@@ -1,5 +1,4 @@
-1) Load all modules: 
-   cuda/8.0 , gcc/5.3.0 , metis/5.1.0_gnu , boost/1.60.0 
+1) run "script_mods.sh"
 2) clone the github repository in your bridges folder.
 3) from the gunrock folder, "mkdir build && cd build/"
 4) run "cmake .."
