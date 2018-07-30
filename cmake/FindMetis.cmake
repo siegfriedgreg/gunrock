@@ -32,8 +32,7 @@ ENDIF(PARMETIS_INCLUDE_DIR)
 # ------------------------------------------------------------------------
 FIND_LIBRARY(METIS_LIBRARY metis
   /opt/packages/metis/gnu/5.1.0/lib
-  /usr/local/lib
-  /usr/lib
+  #### Add more if needed
   )
 
 SET(gunrock_REQUIRED_METIS_VERSION 5.0)
