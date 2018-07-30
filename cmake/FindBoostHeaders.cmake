@@ -236,7 +236,7 @@ endif()
 #  Search for Boost include DIR
 # ------------------------------------------------------------------------
 
-BOOST_INCLUDEDIR = "/opt/packages/boost/1.60.0/include"
+BOOST_INCLUDEDIR = /opt/packages/boost/1.60.0/include
 
 set(_Boost_VARS_INC BOOST_INCLUDEDIR Boost_INCLUDE_DIR Boost_ADDITIONAL_VERSIONS)
 _Boost_CHANGE_DETECT(_Boost_CHANGE_INCDIR ${_Boost_VARS_DIR} ${_Boost_VARS_INC})
