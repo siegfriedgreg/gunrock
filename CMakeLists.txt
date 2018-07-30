@@ -208,7 +208,7 @@ if (CUDA_VERSION VERSION_EQUAL "8.0" OR (CUDA_VERSION VERSION_GREATER "8.0" AND 
 elseif (CUDA_VERSION VERSION_EQUAL "9.0" OR CUDA_VERSION VERSION_GREATER "9.0")
   option(GUNROCK_GENCODE_SM70
     "ON to generate code for Compute Capability 7.0 devices (e.g. Volta V100)"
-    ON)
+    OFF)
   option(GUNROCK_GENCODE_SM71
     "ON to generate code for Compute Capability 7.1 devices"
     OFF)
