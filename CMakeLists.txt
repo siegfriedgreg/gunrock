@@ -186,11 +186,11 @@ option(GUNROCK_GENCODE_SM30
 
 option(GUNROCK_GENCODE_SM35
   "ON to generate code for Compute Capability 3.5 devices (e.g. Tesla K20)"
-  ON)
+  OFF)
 
 option(GUNROCK_GENCODE_SM37
   "ON to generate code for Compute Capability 3.7 devices (e.g. Tesla K80)"
-  OFF)
+  ON)
 
 option(GUNROCK_GENCODE_SM50
   "ON to generate code for Compute Capability 5.0 devices (e.g. GeForce GTX 750 TI)"
@@ -203,7 +203,7 @@ if (CUDA_VERSION VERSION_EQUAL "8.0" OR (CUDA_VERSION VERSION_GREATER "8.0" AND 
     OFF)
   option(GUNROCK_GENCODE_SM61
     "ON to generate code for Compute Capability 6.1 devices (e.g. GeForce GTX 1080)"
-    ON)
+    OFF)
 #Volta Architecture: CUDA 9
 elseif (CUDA_VERSION VERSION_EQUAL "9.0" OR CUDA_VERSION VERSION_GREATER "9.0")
   option(GUNROCK_GENCODE_SM70
