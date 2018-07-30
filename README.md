@@ -1,13 +1,13 @@
-1) clone the repository from the github account.
-2) in gunrock folder, "mkdir build && cd build/"
-3) Load all modules: 
-   cuda/8.0 , gcc/5.3.0 , metis/5.1.0_gnu , mpi/gcc_openmpi , python2/2.7.11_gcc , boost/1.60.0_gnu_openmpi , cmake/3.7.2
-4) "module show XXX", where XXX is boost and metis, and save the file locations in order to modify the CMakeCache.txt file.
-5) find the boost and metis lines for their needed folder locations and append. boost needs the "include" folder and metis needs the "libmetis.so" filename.
-6) if needing to only do one at a time you will need to append the CMakeCache.txt to turn on and off a few items, gunrock document will explain further.
-7) "cmake .." (no errors or warnings present)
-8) "make"  (no errors but many consistent warnings dealing with the boost library)
-9) that should allow gunrock to compile on bridges. targets are located in the "build/bin/" folder.
+1) Load all modules: 
+   cuda/8.0 , gcc/5.3.0 , metis/5.1.0_gnu , boost/1.60.0 
+2) clone the github repository in your bridges folder.
+3) from the gunrock folder, "mkdir build && cd build/"
+4) run "cmake .."
+5) run "make" (many warning present, but still finishes.) running "make help" will also give a list of options.
+6) you should have all of the algorithms in your build/bin/ folder. Algorithms are set to find my folders on bridges,
+find the appropriate files from the main gunrock to use their directories, or edit for your own.
+7) trying to fix a current run problem...
+
 
 ##################################################################################################################################################################################################################################################
 #########################################################################################################################
