@@ -5,7 +5,8 @@
 5) run "make" (many warnings present, but still finishes.) running "make help" will also give a list of options.
 6) you should have all of the algorithms in your build/bin/ folder. Algorithms are set to find my folders on bridges,
 find the appropriate files from the main gunrock to use their directories, or edit for your own.
-7) to run a graph try: "./bfs market ../../../maps/gh0**.mtx" where the ** is 1-16.
+7) to run a graph from the build/bin directory, in an "interact --gpu" session, try: 
+	"./bfs market ../../../maps/gh0**.mtx" where the ** is 1-16.
 
 
 ##################################################################################################################################################################################################################################################
