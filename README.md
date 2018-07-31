@@ -66,3 +66,54 @@ GPU_0	 1579155456	 78373368	 78373368
 #########################################################################################################################
 #########################################################################################################################
 ########################################################################################################################
+
+Loading Matrix-market coordinate-formatted graph ...
+Reading from ../../../maps/gh002.mtx:
+  Parsing MARKET COO format (50912018 nodes, 108109320 directed edges)... Done parsing (18s).
+  Converting 50912018 vertices, 108109320 directed edges (unordered tuples) to CSR format...
+Done converting (4s).
+
+Degree Histogram (50912018 vertices, 108109320 edges):
+    Degree   0: 0 (0.00%)
+    Degree 2^0: 2055578 (4.04%)
+    Degree 2^1: 47863091 (94.01%)
+    Degree 2^2: 993289 (1.95%)
+    Degree 2^3: 60 (0.00%)
+
+  Converting 50912018 vertices, 108109320 directed edges (unordered tuples) to CSR format...
+Done converting (5s).
+Using 1 GPU: [ 0 ].
+Using traversal-mode TWC
+__________________________
+--------------------------
+iteration 0 elapsed: 1036.210060 ms, src = 0, #iteration = 17346
+Computing reference value ...
+CPU BFS finished in 7562.914062 msec. cpu_search_depth: 17346
+
+Label Validity: 
+CORRECT
+
+First 40 labels of the GPU result:
+[0:0 1:1 2:8837 3:8836 4:8835 5:8834 6:8833 7:8832 8:8831 9:8830 10:8829 11:8828 12:8827 13:8826 14:8825 15:8824 16:8823 17:8822 18:8821 19:8820 20:8819 21:8818 22:8817 23:8816 24:8815 25:8814 26:8813 27:8812 28:8811 29:8810 30:8809 31:8808 32:8807 33:8806 34:8805 35:8804 36:8803 37:8802 38:8801 39:8800 ]
+
+	Memory Usage(B)	 #keys0,0	 #keys0,1
+GPU_0	 6289358848	 330928119	 330928119
+	 queue_sizing =	 6.500000 	 6.500000
+
+ [BFS] finished.
+ avg. elapsed: 1036.2101 ms
+ iterations: 17346
+ min. elapsed: 1036.2101 ms
+ max. elapsed: 1036.2101 ms
+ rate: 104.3315 MiEdges/s
+ src: 0
+ nodes_visited: 50912018
+ edges_visited: 108109320
+ nodes queued: 50912018
+ edges queued: 108109320
+ load time: 30994.4069 ms
+ preprocess time: 253.9389 ms
+ postprocess time: 679.3540 ms
+ total time: 40767.7522 ms
+
+
