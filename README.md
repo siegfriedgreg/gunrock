@@ -1,3 +1,5 @@
+The versions noted in the script are the only ones that work after "make"!!!!
+
 1) run "script_mods.sh", or at least note the order. helps when in the interact environment to install modules in the same order as compilation.
 2) clone the github repository in your bridges folder.
 3) from the gunrock folder, "mkdir build && cd build/"
